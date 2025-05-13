@@ -28,6 +28,16 @@ public class Team {
         this.country = country;
     }
 
+    @Override
+    public String toString() {
+        return "Team{" +
+                "id=" + id +
+                ", teamName='" + teamName + '\'' +
+                ", brandBike='" + brandBike + '\'' +
+                ", country='" + country + '\'' +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }
