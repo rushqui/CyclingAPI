@@ -2,7 +2,6 @@ package com.eliasr.CyclingAPI.controller;
 
 import com.eliasr.CyclingAPI.dto.GenericResponse;
 import com.eliasr.CyclingAPI.dto.rider.RiderRQ;
-import com.eliasr.CyclingAPI.entity.Rider;
 import com.eliasr.CyclingAPI.service.rider.IRiderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
