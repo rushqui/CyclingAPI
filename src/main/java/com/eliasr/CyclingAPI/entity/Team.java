@@ -2,7 +2,7 @@ package com.eliasr.CyclingAPI.entity;
 
 import jakarta.persistence.*;
 
-@Entity
+@Entity(name = "team")
 public class Team {
 
     @Id
@@ -16,13 +16,16 @@ public class Team {
     @Column(name = "brand_bikes")
     private String brandBike;
 
+    private String country;
+
     public Team(){
 
     }
 
-    public Team(String teamName, String brandBike) {
+    public Team(String teamName, String brandBike, String country) {
         this.teamName = teamName;
         this.brandBike = brandBike;
+        this.country = country;
     }
 
     public Long getId() {
@@ -47,5 +50,13 @@ public class Team {
 
     public void setBrandBike(String brandBike) {
         this.brandBike = brandBike;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 }

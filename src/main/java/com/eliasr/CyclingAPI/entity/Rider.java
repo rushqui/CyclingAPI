@@ -2,8 +2,8 @@ package com.eliasr.CyclingAPI.entity;
 
 import jakarta.persistence.*;
 
-@Entity
-public class Riders {
+@Entity(name = "rider")
+public class Rider {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
