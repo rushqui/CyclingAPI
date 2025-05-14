@@ -33,7 +33,7 @@ public class GeneralConfig {
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/CyclingDB");
+        dataSource.setUrl("jdbc:postgresql://192.168.1.135:5432/CyclingDB");
         dataSource.setUsername( "eliasr" );
         dataSource.setPassword( "postgres" );
         return dataSource;
